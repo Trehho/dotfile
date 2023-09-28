@@ -18,6 +18,8 @@ alias test="cargo watch -x"
 alias gf="go fmt"
 alias gp="git push"
 alias ga="git add"
+alias gc="git commit -m"
+alias gs="git status"
 
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
