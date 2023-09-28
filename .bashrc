@@ -16,6 +16,8 @@ alias bgg='cd ../..'
 alias ff="fzf --preview 'bat --color=always {}' --preview-window '~3'"
 alias test="cargo watch -x"
 alias gf="go fmt"
+alias gp="git push"
+alias ga="git add"
 
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
