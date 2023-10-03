@@ -16,20 +16,18 @@ alias bgg='cd ../..'
 alias ff="fzf --preview 'bat --color=always {}' --preview-window '~3'"
 alias test="cargo watch -x"
 alias gf="go fmt"
-
+alias gp="git push"
+alias gc="git commit -m"
+alias gs="git status"
+alias mc="make clear"
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
-
-#
-# Work with git
-#
-alias gs="git status"
 ga (){
 	git add .
-	git commit -m '$1'
+	git commit -m  $1
 }
 gw (){
 	git add .
-	git commit -m '$1'
+	git commit -m  $1
 	git push
 }
