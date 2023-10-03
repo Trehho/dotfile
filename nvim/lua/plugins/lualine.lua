@@ -95,7 +95,7 @@ ins_left {
     local mode_color = {
       n = colors.green,
       i = colors.red,
-      v = colors.blue,
+      v = colors.orange,
       [''] = colors.blue,
       V = colors.blue,
       c = colors.magenta,
