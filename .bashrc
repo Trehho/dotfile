@@ -4,6 +4,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 #
+
+# Alias
 alias ls='exa'
 alias grep='grep --color=auto'
 alias la='exa -la'
@@ -20,14 +22,18 @@ alias gp="git push"
 alias gc="git commit -m"
 alias gs="git status"
 alias mc="make clear"
-eval "$(starship init bash)"
-. "$HOME/.cargo/env"
+
+# Git 
 ga (){
 	git add .
-	git commit -m  $1
+	git commit -m $1
 }
 gw (){
 	git add .
-	git commit -m  $1
+	git commit -m $1
 	git push
 }
+
+
+eval "$(starship init bash)"
+. "$HOME/.cargo/env"
