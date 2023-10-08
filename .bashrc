@@ -10,6 +10,8 @@ alias ls='exa'
 alias grep='grep --color=auto'
 alias la='exa -la'
 alias ua='sudo pacman -Syyu'
+alias ur='sudo pacman -Scc' #pacman remove cashe
+alias urr='sudo pacman -Qttdq | pacman -Rns -' #remove unuse packages
 alias v='nvim'
 alias sv='nvim -o'
 alias cat='bat'
