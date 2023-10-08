@@ -5,25 +5,21 @@
 [[ $- != *i* ]] && return
 #
 
-# Alias
+# System alias
+alias ua='sudo pacman -Syyu' #sync and update arch
+alias ur='sudo pacman -Scc' #pacman remove cashe
+alias urr='sudo pacman -Qttdq | pacman -Rns -' #remove unuse packages
 alias ls='exa'
 alias grep='grep --color=auto'
 alias la='exa -la'
-alias ua='sudo pacman -Syyu'
-alias ur='sudo pacman -Scc' #pacman remove cashe
-alias urr='sudo pacman -Qttdq | pacman -Rns -' #remove unuse packages
 alias v='nvim'
-alias sv='nvim -o'
 alias cat='bat'
 alias bg='cd ..'
 alias bgg='cd ../..'
 alias ff="fzf --preview 'bat --color=always {}' --preview-window '~3'"
 alias test="cargo watch -x"
 alias gf="go fmt"
-alias gp="git push"
-alias gc="git commit -m"
 alias gs="git status"
-alias mc="make clear"
 
 # Git 
 ga (){
