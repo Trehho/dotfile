@@ -6,19 +6,19 @@
 #
 
 # System alias
-alias ua='sudo pacman -Syyu' #sync and update arch
+alias uu='sudo pacman -Syyu' #sync and update arch
 alias ur='sudo pacman -Scc' #pacman remove cashe
 alias urr='sudo pacman -Qttdq | pacman -Rns -' #remove unuse packages
+alias rr='sudo pacman -Rs'
 alias ls='exa'
-alias grep='grep --color=auto'
 alias la='exa -la'
+alias grep='grep --color=auto'
 alias v='nvim'
 alias cat='bat'
 alias bg='cd ..'
 alias bgg='cd ../..'
 alias ff="fzf --preview 'bat --color=always {}' --preview-window '~3'"
 alias test="cargo watch -x"
-alias gf="go fmt"
 alias gs="git status"
 
 # Git 
