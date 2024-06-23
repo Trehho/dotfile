@@ -9,17 +9,19 @@
 alias uu='sudo pacman -Syyu' #sync and update arch
 alias ur='sudo pacman -Scc' #pacman remove cashe
 alias urr='sudo pacman -Qttdq | pacman -Rns -' #remove unuse packages
+alias ii='sudo pacman -S'
 alias rr='sudo pacman -Rs'
 alias ls='exa'
 alias la='exa -la'
 alias grep='grep --color=auto'
 alias v='nvim'
 alias cat='bat'
-alias bg='cd ..'
-alias bgg='cd ../..'
+alias ..='cd ..'
+alias ...='cd ../..'
 alias ff="fzf --preview 'bat --color=always {}' --preview-window '~3'"
-alias test="cargo watch -x"
 alias gs="git status"
+alias fl='ls /usr/include/ | grep '
+alias fm='vifm'
 
 # Git 
 ga (){
