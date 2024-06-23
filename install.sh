@@ -11,4 +11,7 @@ cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd
 
 cp ~/dotfile/.xinitrc ~/.xinitrc
 
+rm ~/.bashrc
+cp ~/dotfile/.bashrc ~/
+
 systemctl enable ly.service
