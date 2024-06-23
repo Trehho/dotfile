@@ -9,6 +9,6 @@ mkdir ~/.config/sxhkd
 cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm
 cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd
 
-cp /etc/X11/xinit/xinitrc ~/.xinitrc
+cp ~/dotfile/.xinitrc ~/.xinitrc
 
 systemctl enable ly.service
